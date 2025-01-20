@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles del Contacto</title>
+    <link href="detalle-contacto.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Detalles del Contacto</h1>
+            <ul>
+                <li><a href="../contactos/contacto.html">Volver a la lista de contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <div class="tablecontainer">
+        <div class="table1">
+            <table>
+                <caption>Información del Contacto</caption>
+                <tbody>
+                    <tr>
+                        <th>DPI</th>
+                        <td id="contacto-dpi"></td>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <td id="contacto-nombre"></td>
+                    </tr>
+                    <tr>
+                        <th>Dirección</th>
+                        <td id="contacto-direccion"></td>
+                    </tr>
+                    <tr>
+                        <th>Teléfono</th>
+                        <td id="contacto-telefono"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <script>
+        const contactos = {
+            1: { dpi: "5473 84987 5632", nombre: "Jose Cortez", direccion: "Zona 07", telefono: "6324 5546" },
+            2: { dpi: "1156 78451 6731", nombre: "Luis Cuxun", direccion: "Zona 04", telefono: "8798 1214" },
+            3: { dpi: "1142 54654 3541", nombre: "Pablo Castillo", direccion: "Zona 08", telefono: "7582 5561" },
+            4: { dpi: "5321 62321 0155", nombre: "Kevin Gutierrez", direccion: "Zona 21", telefono: "1215 0055" },
+            5: { dpi: "1960 48796 0101", nombre: "Ian Alfaro", direccion: "Zona 18", telefono: "4764 8105" },
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const contactoId = params.get("contacto");
+
+        if (contactoId && contactos[contactoId]) {
+            const datos = contactos[contactoId];
+            document.getElementById("contacto-dpi").textContent = datos.dpi;
+            document.getElementById("contacto-nombre").textContent = datos.nombre;
+            document.getElementById("contacto-direccion").textContent = datos.direccion;
+            document.getElementById("contacto-telefono").textContent = datos.telefono;
+        } else {
+            const table = document.querySelector("table tbody");
+            table.innerHTML = "<tr><td colspan='2'>Contacto no encontrado.</td></tr>";
+        }
+    </script>
+</body>
+</html>

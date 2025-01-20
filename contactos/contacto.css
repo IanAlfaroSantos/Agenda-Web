@@ -1,0 +1,165 @@
+body {
+    background-image: url("../assets/image/FondoContacto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    color: #f39c12;
+    font-size: 50px;
+    margin: 10px;
+    font-family: 'Bungee Inline', cursive;
+    text-shadow: 2px 2px 5px white, 3px 3px 10px lime;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+    gap: 20px;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.boton {
+    display: inline-block;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    font-family: 'Pacifico', cursive;
+    border: 2px solid white;
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffe0;
+}
+
+.boton:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+table {
+    font-size: 18px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0.5, 0.5, 0.5, 0.5);
+    overflow: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    background: #ff758c;
+    color: black;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Rubik Doodle Shadow', cursive;
+}
+
+th {
+    color: #e91e63;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+    font-family: 'Pacifico', cursive;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid blue;
+    font-family: 'Playwrite AU VIC', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.tablecontainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.table1 {
+    color: #9c27b0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.table2 {
+    color: #00bcd4;
+    font-family: 'Indie Flower', cursive;
+}
+
+.table3 {
+    color: #8bc34a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table4 {
+    color: #ff9800;
+    font-family: 'Arial', sans-serif;
+}
+
+.table5 {
+    color: #f44336;
+    font-family: 'Verdana', sans-serif;
+}
+
+table:hover {
+    transform: scale(115%);
+    transition: transform 0.7s ease-in-out;
+}
+
+.swal2-popup {
+    background-color: black;
+    color: white;
+}
+
+.swal2-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.swal2-title {
+    color: red;
+    font-family: 'Bungee Inline', sans-serif;
+}
+
+.swal2-html-container {
+    color: #07e2ff;
+    font-family: 'Playwrite AU VIC', sans-serif;
+}
+
+.swal2-confirm {
+    background-color: #00ff62;
+    color: white;
+}
+
